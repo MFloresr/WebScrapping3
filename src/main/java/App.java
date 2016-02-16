@@ -9,7 +9,6 @@ public class App {
 
     public static void main(String[] args) throws IOException {
         ArrayList<String> elementos=new ArrayList<String>();
-        String[] preparado= null;
         ArrayList<Color> listaColores=new ArrayList<Color>();
         String[] sinnombre=null;
         String nombrecolor = new String();
@@ -23,7 +22,6 @@ public class App {
             elementos.add(fila.get(i).text().toString());
         }
         for (int i=0;i<elementos.size();i++){
-            //System.out.println(elementos.get(i));
             if(elementos.get(i).contains("#")){
                 String[] colores = elementos.get(i).split(",");
                 for(int x=0;x<colores.length;x++){
